@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background: #2C5364;
+            background: -webkit-linear-gradient(to right, #CFEAF1, #2C5364);
+            background: linear-gradient(to right, #CFEAF1, #2C5364);
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(155, 214, 248);
+            padding: 1rem 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+            opacity: 0.75;
+            position: sticky;
+            top: 2px;
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .nav-link a:hover {
+            color: azure;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .noti {
+            cursor: pointer;
+            position: relative;
+            font-size: 1.5rem;
+        }
+
+        .num {
+            font-size: 0.8rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 1rem; */
+        }
+
+        .login-card {
+            width: 35rem;
+            height: 23rem;
+            border-radius: 3rem;
+            margin-top: 5rem;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        .login-card h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .login-card p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 0.7rem 0.8rem;
+            margin-bottom: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .login-card button {
+            width: 100%;
+            padding: 0.7rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #00ddff;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 0.8rem;
+        }
+
+        .login-card>a {
+            display: block;
+            text-align: right;
+            text-decoration: none;
+            color: #3b7f8a;
+            margin-bottom: 1rem;
+        }
+
+        .login-card {
+            margin-bottom: 0;
+        }
+
+        .login-card a {
+            text-decoration: none;
+            color: #3b7f8a;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">CodeVerse</div>
+        <ul class="nav-links">
+            <li><a href="#">
+                    <i class="fa-regular fa-house"></i></a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+        </ul>
+        <div class="noti">
+            <!-- <span class="num">5</span> -->
+            <i class="fa-regular fa-bell"></i>
+            <span class="num">5</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="login-card">
+            <h1>Welcome Back</h1>
+            <p>Login to Continue</p>
+            <input type="email" id="emailInput" placeholder="Entre your Email">
+            <br>
+            <input type="password" id="passwordInput" placeholder="Password">
+            <br>
+            <button id="loginBtn">Login</button>
+            <a href="#">Forgot Password</a>
+            <p>Dont have a Account with us? <a href="./Signuppage.html">Sign up</a></p>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            const email = document.getElementById('emailInput').value;
+            const password = document.getElementById('passwordInput').value;
+
+            if (email || password) {
+                localStorage.setItem('userEmail', email);
+                localStorage.setItem('userPassword', password);
+            }
+        });
+    </script>
+</body>
+
+</html>

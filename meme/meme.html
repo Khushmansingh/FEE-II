@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background: lightblue;
+        }
+
+        #videoBox {
+            display: none;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        video {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="formBox">
+    <h1>Find Your Result</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <br>
+
+    <button onclick="showVideo()">Reveal</button>
+</div>
+
+<div id="videoBox">
+    <h2 id="message"></h2>
+
+    <video controls autoplay>
+        <source src="rick.mp4" type="video/mp4">
+    </video>
+</div>
+
+<script>
+function showVideo() {
+
+    let name = document.getElementById("name").value;
+
+    if (name == "") {
+        name = "Friend";
+    }
+
+    document.getElementById("formBox").style.display = "none";
+    document.getElementById("videoBox").style.display = "block";
+
+    document.getElementById("message").innerHTML =
+        "Gotcha, " + name + "!";
+}
+</script>
+
+</body>
+</html>
