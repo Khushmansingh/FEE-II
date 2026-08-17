@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #2874f0;
+}
+
+.navlogo {
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
+}
+
+#searchbar {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-right button {
+  padding: 6px 14px;
+  border: none;
+  background: #fff;
+  color: #2874f0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-right button:hover {
+  background: #e0e0e0;
+}
