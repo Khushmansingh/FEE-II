@@ -4,44 +4,56 @@ const products = [
   {
     id: 1,
     name: "boAt Rockerz 450 Bluetooth Headphone",
-    image: "https://i.pinimg.com/originals/06/d2/d7/06d2d746e5fdb898ebc454d245e83fa1.jpg",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Headphone",
     price: 1299,
-    
+    originalPrice: 3990,
+    rating: 4.2,
+    discount: 67,
   },
-  {
+  { 
     id: 2,
     name: "Noise ColorFit Pro 4 Smartwatch",
-    image: "https://cdn1.smartprix.com/rx-iYKXux9GE-w280-h280/noise-colorfit-pro-4.webp",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Smartwatch",
     price: 2499,
-   
+    originalPrice: 5999,
+    rating: 4.1,
+    discount: 58,
   },
   {
     id: 3,
     name: "Samsung Galaxy M14 5G (Berry Blue, 128GB)",
-    image: "https://media-ik.croma.com/prod/https://media.tatacroma.com/Croma%20Assets/Communication/Mobiles/Images/305186_jo8oau.png",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Phone",
     price: 10999,
-   
+    originalPrice: 16999,
+    rating: 4.3,
+    discount: 35,
   },
   {
     id: 4,
     name: "Lenovo IdeaPad Slim 3 Intel Core i5 Laptop",
-    image: "https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/312504_3_6bs16qKFk.png",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Laptop",
     price: 42990,
-   
+    originalPrice: 68990,
+    rating: 4.4,
+    discount: 38,
   },
   {
     id: 5,
     name: "Nike Revolution 6 Running Shoes For Men",
-    image: "https://rukminim1.flixcart.com/image/1500/1500/xif0q/shoe/0/m/f/8-dc3728-401nike-9-nike-midnight-navy-white-obsidian-ashen-slate-original-imaghyyggtfhwqzy.jpeg?q=90",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Shoes",
     price: 2695,
-    
+    originalPrice: 3695,
+    rating: 4.3,
+    discount: 27,
   },
   {
     id: 6,
     name: "boAt Airdopes 141 TWS Earbuds",
-    image: "https://www.myg.in/images/thumbnails/300/300/detailed/93/Airdopes_141_ANC-1-removebg-preview.png.png",
+    image: "https://placehold.co/200x200/e8e8e8/555?text=Earbuds",
     price: 899,
-   
+    originalPrice: 4490,
+    rating: 4.0,
+    discount: 80,
   },
 ];
 
