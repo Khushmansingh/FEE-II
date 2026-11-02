@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #eef3f8;
+  color: #17212b;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
