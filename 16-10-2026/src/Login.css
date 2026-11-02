@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+div{
+    border: 1px solid black;
+    background-color: rgb(27, 6, 46);
+    padding: 24px;
+}
+
+h2,p{
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 2px;
+    background-color: #f9fafb;
+    color: #111827;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button{
+    display: block;
+    margin: 10px;
+    background-color: rgb(97, 97, 250);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 9px;
+}
